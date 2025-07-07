@@ -2,7 +2,7 @@ import requests
 import os
 from datetime import datetime, timedelta
 
-ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY", "TEST1234567890FAKEKEY")
+ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY", "XD4YUX4BZ6NK8T8B5WJVDCKSVY7K4765J3”)
 
 def scan_ethereum_address(address: str, token: str, days: int = 7):
     cutoff = int((datetime.now() - timedelta(days=days)).timestamp())
